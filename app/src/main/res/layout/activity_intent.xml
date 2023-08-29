@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntentActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="472dp"
+
+        android:text="Hello world!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/implisitIntent"
+        android:layout_width="149dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="296dp"
+        android:backgroundTint="@color/black"
+        android:onClick="ImplicitINtent"
+        android:text="Implicit Intent"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <Button
+        android:id="@+id/explicitIntent"
+        android:layout_width="167dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="@color/black"
+        android:text="Explicit Intent"
+        android:textAllCaps="false"
+        android:onClick="openSecondActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/implisitIntent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
